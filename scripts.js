@@ -46,6 +46,8 @@ function iterate_over_card() {
   );
 }
 
-if (!iterate_over_card()) {
-  location.reload();
-}
+setTimeout(function(){
+  if (!iterate_over_card()) {
+    location.reload();
+  }
+}, 2000);
